@@ -1,0 +1,18 @@
+menu= "Welcome to the menu\n"                                     \
++     "Please select an option below:\n"                          \
++ (   "0 - Enter a number\n"   + "1 - Display current number\n" + \
+"2 - Divisibility checking\n"  + "3 - Perfect checking\n"       + \
+"4 - Triangular checking\n"    + "5 - Quit\n" )
+x == ("")
+while option!=5:                                                  # <<< Q2
+    print(menu) 
+    option= int(input("Enter option: "))
+    if option==0:
+        x= int(input("What is your number?: "))
+        while x <=0:
+             x= int(input("Must be positive, please! What is your number?: ")
+    elif option==1:                                               # <<< Q1
+        print("The current number is", x)
+        elif (x == ""):
+            print("No number yet - Please input a number and try again.")
+            x= int(input("What is your number?: "))
